@@ -2,10 +2,12 @@
 This is repository where has all my demo.<br/>
 这里放置我所有的Demo.
 
-<font color='red' size='5'>Demo介绍</font>
+<font color='blue' size='5'>Demo索引：</font>
 
-## AppBootStartupAndRegularRestartDemo
+Demo名|功能描述
+---|---
+**AppBootStartupAndRegularRestartDemo**|（这是一个如何让app开机自动启动以及定时重启的demo）This is a android demo about startup when system has booted and regular restart app
 
-This is a android demo about startup when system has booted and regular restart app ...
-这是一个如何让app开机自动启动以及定时重启的demo ...
+
+
 
