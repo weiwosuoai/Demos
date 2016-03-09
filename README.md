@@ -7,7 +7,7 @@ This is repository where has all my demo.<br/>
 Demo名|功能描述|相关博文地址
 ---|---|---
 **AppBootStartup<br/>AndRegularRestartDemo**|（这是一个如何让app开机自动启动以及定时重启的demo）<br/>This is a android demo about<br/> startup when system has booted and regular restart app|无
-**SimpleMVPDemo**|（利用MVP模式实现登陆页面的demo）This is a android demo <br/>about login with MVP model|[《初探Android中的MVP模式》](http://jiangbing.me/blog/2016/02/20/the-overview-of-the-andorid-mvp/)
+**SimpleMVPDemo**|（利用MVP模式实现登陆页面的demo）This is a android demo about login with MVP model|[《初探Android中的MVP模式》](http://jiangbing.me/blog/2016/02/20/the-overview-of-the-andorid-mvp/)
 
 
 
