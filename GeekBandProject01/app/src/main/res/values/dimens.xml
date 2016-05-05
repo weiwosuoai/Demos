@@ -1,0 +1,11 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="dot_ll_margin_bottom">20dp</dimen>
+    <dimen name="to_main_btn_rl_margin_bottom">60dp</dimen>
+    <dimen name="dot_margin_left">5dp</dimen>
+    <dimen name="ts_banner_btn">16sp</dimen>
+    <dimen name="padding_banner_btn">10dp</dimen>
+    <dimen name="margin_bottom_banner_btn">150dp</dimen>
+</resources>

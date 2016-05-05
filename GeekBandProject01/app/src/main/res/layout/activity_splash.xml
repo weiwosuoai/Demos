@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".ui.SplashActivity">
+
+    <!-- View pager. -->
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+    <!-- The linearlaout contain all the dots. -->
+    <LinearLayout
+        android:id="@+id/ll_dot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dot_ll_margin_bottom"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:id="@+id/iv_first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_banner_dot"
+            android:layout_marginLeft="@dimen/dot_margin_left"/>
+        <ImageView
+            android:id="@+id/iv_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/selector_banner_dot"
+            android:layout_marginLeft="@dimen/dot_margin_left"/>
+        <ImageView
+            android:id="@+id/iv_third"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/selector_banner_dot"
+            android:layout_marginLeft="@dimen/dot_margin_left"/>
+
+    </LinearLayout>
+
+    <!-- Button -->
+    <TextView
+        android:id="@+id/btn_banner"
+        android:background="@drawable/selector_banner_btn"
+        android:padding="@dimen/padding_banner_btn"
+        android:layout_width="@dimen/margin_bottom_banner_btn"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/to_main_btn_rl_margin_bottom"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/ts_banner_btn"
+        android:text="@string/immediately_experience"
+        android:gravity="center"
+        android:visibility="gone"/>
+</RelativeLayout>
