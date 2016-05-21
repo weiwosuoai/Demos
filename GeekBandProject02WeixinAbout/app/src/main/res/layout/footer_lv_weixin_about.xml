@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="40dp"
+    android:paddingBottom="40dp"
+    android:background="@color/gray"
+    android:gravity="center"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/weixin_about_footer_str00"
+        android:textSize="14sp"
+        android:textColor="@color/blue"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/weixin_about_footer_str01"
+        android:textSize="12sp"
+        android:textColor="@color/gray_dark"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/weixin_about_footer_str02"
+        android:textSize="12sp"
+        android:textColor="@color/gray_dark"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/weixin_about_footer_str03"
+        android:textSize="12sp"
+        android:textColor="@color/gray_dark"/>
+
+</LinearLayout>

@@ -1,6 +1,0 @@
-<resources>
-    <string name="app_name">ToolbarDemo</string>
-    <string name="change_skin">换肤</string>
-    <string name="exit">退出</string>
-    <string name="weixin_about_title">关于微信</string>
-</resources>

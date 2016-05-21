@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">ToolbarDemo</string>
+    <string name="change_skin">换肤</string>
+    <string name="exit">退出</string>
+    <string name="weixin_about_title">关于微信</string>
+
+    <string name="weixin_about_aty_item00_title">去评分</string>
+    <string name="weixin_about_aty_item01_title">功能介绍</string>
+    <string name="weixin_about_aty_item02_title">系统通知</string>
+    <string name="weixin_about_aty_item03_title">帮助和反馈</string>
+    <string name="weixin_about_aty_item04_title">投诉</string>
+    <string name="weixin_about_aty_item05_title">检查新版本</string>
+    <string name="winxin_version_name">微信 6.3.7</string>
+    <string name="weixin_about_footer_str00">使用条款和隐私政策</string>
+    <string name="weixin_about_footer_str01">腾讯公司 版权所有</string>
+    <string name="weixin_about_footer_str02">Copyright @ 2011-2016 Tencent.</string>
+    <string name="weixin_about_footer_str03">All Rights Reserved.</string>
+
+
+</resources>

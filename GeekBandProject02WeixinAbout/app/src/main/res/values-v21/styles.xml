@@ -1,0 +1,41 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:textColorPrimary">@color/colorAccent</item>
+    </style>
+
+    <!-- Toolbar 样式 -->
+    <style name="ToolbarTheme" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <!-- 设置菜单文字颜色 -->
+        <item name="android:actionMenuTextColor">@android:color/black</item>
+        <!--<item name="android:actionMenuTextAppearance">@style/ToolbarMenuTextSize</item>-->
+        <item name="android:selectableItemBackground">@drawable/toolbar_btn_selector</item>
+    </style>
+
+    <!-- Toolbar 弹出菜单样式 -->
+    <style name="ToolbarPopupTheme" parent="@style/ThemeOverlay.AppCompat">
+        <!-- 弹出框背景色 -->
+        <item name="android:colorBackground">@color/colorPrimary</item>
+        <!--<item name="android:textColor">@android:color/black</item>-->
+
+    </style>
+
+    <!-- Toolbar 文字样式 -->
+    <style name="ToolbarTitleTheme" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <!-- 修改 toolbar 大标题字体大小 -->
+        <item name="android:textSize">@dimen/toolbar_text_size</item>
+    </style>
+
+    <!-- Toolbar 菜单文字尺寸(用不上) -->
+    <!--<style name="ToolbarMenuTextSize" parent="@style/TextAppearance.AppCompat.Menu">-->
+        <!--<item name="android:textSize">2sp</item>-->
+    <!--</style>-->
+
+
+</resources>
