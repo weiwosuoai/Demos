@@ -5,8 +5,10 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AbsListView;
 import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.ListView;
@@ -103,6 +105,7 @@ public class MainActivity extends AppCompatActivity {
                         .show();
             }
         });
+
     }
 
     /**
@@ -124,10 +127,12 @@ public class MainActivity extends AppCompatActivity {
 
         private Context mContext;
         private String[] mStrArr;
+        private LayoutInflater mInflater;
 
         public WeixinAboutAdapter(Context context, String[] strArr) {
             this.mContext = context;
             this.mStrArr = strArr;
+            this.mInflater = LayoutInflater.from(this.mContext);
         }
 
         @Override
@@ -148,17 +153,18 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public View getView(int position, View convertView, ViewGroup parent) {
             ViewHolder viewHolder;
+            // 判断是否存在缓存
             if (convertView == null) {
-                convertView = LayoutInflater.from(mContext)
-                        .inflate(R.layout.item_lv_weixn_about, null);
+                convertView = this.mInflater.inflate(R.layout.item_lv_weixn_about, null);
 
                 viewHolder = new ViewHolder(convertView);
                 convertView.setTag(viewHolder);
             } else {
+                // 若有，取出缓存中存放的 ViewHolder,避免再次 findViewById().
                 viewHolder = (ViewHolder) convertView.getTag();
             }
 
-
+            // 更新视图
             viewHolder.title.setText(mStrArr[position]);
 
             return convertView;

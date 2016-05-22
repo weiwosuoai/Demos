@@ -11,6 +11,7 @@ Demo 名|功能描述|相关博文地址
 **Android5.0PaletteDemo**|（Android 5.X 新特性之 Pallete）This is a android demo about the palette of Android 5.X|[《Anroid 5.X 新特性之 Palette》](http://jiangbing.me/2015/12/26/2015-12-26-the-palette-of-the-android5-0/)
 **GeekBandProject01**|（引导页功能和点击两次退出应用）This is a android demo contains the introductory page and click twice to exit the application|无
 **Android5.0Demo**|（Android 5.X 新特性之 elevation,tinting,clipping）This is a android demo contains the elevation, tinting and clipping perproty on the Android 5.X|无
+**GeekBandProject02WeixinAbout**|（微信 app - 关于页面）This is a android demo about winxin about page|无
 
 
 
