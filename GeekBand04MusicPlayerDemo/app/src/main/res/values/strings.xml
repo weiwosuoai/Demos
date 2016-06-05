@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">GeekBand04MusicPlayerDemo</string>
+    <string name="play">播放</string>
+    <string name="stop">停止</string>
+    <string name="play_pre">上一首</string>
+    <string name="play_next">下一首</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="Click">Click</string>
+    <string name="music_name">正在加载 ...</string>
+    <string name="main_aty_content">这是一个 widget mp3 demo.</string>
+</resources>

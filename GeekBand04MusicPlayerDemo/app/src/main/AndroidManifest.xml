@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="me.jiangbing.geekband04musicplayerdemo">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <!--
+             First, declare the <code>AppWidgetProvider</code> class in your application's
+             AndroidMaifest.xml file.
+        -->
+        <!-- <receiver -->
+        <!-- android:icon="@mipmap/ic_launcher" -->
+        <!-- android:label="Excample Widget" -->
+        <!-- android:name="ExampleAppWidgetProvider"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/> -->
+        <!-- </intent-filter> -->
+        <!-- <meta-data android:name="android.appwidget.provider" -->
+        <!-- android:resource="@xml/example_appwidget_info"/> -->
+        <!-- </receiver> -->
+
+
+        <!--
+             android:exported="false" : 出于安全性考虑,确保此服务仅仅使用在本应用中
+             android:enabled="true" : 设置此 service 是否能够被系统实例化。
+        -->
+        <service
+            android:name=".MusicPlayService"
+            android:enabled="true"
+            android:exported="false">
+        </service>
+
+        <receiver android:name=".MusicPlayService$MusicOperationReceiver">
+            <intent-filter>
+                <action android:name="me.jiangbing.geekband04musicplayerdemo.play"/>
+                <action android:name="me.jiangbing.geekband04musicplayerdemo.pause"/>
+                <action android:name="me.jiangbing.geekband04musicplayerdemo.pre"/>
+                <action android:name="me.jiangbing.geekband04musicplayerdemo.next"/>
+                <action android:name="me.jiangbing.geekband04musicplayerdemo.GET_MUSIC"/>
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".MusicWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="me.jiangbing.geekband04musicplayerdemo.action.UPDATE_BTN_TO_PAUSE"/>
+                <action android:name="me.jiangbing.geekband04musicplayerdemo.action.UPDATE_BTN_TO_PLAY"/>
+                <action android:name="me.jiangbing.geekband04musicplayerdemo.action.MUSIC_INFO"/>
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_setting"/>
+        </receiver>
+    </application>
+
+</manifest>
